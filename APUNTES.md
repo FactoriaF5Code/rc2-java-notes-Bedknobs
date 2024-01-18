@@ -11,7 +11,6 @@ Con Visual Studio Code:
 Es la clase donde se va a ejecutar el código que cree. Ejemplo de una clase main: 
 
 ```
-
     package proyecto;
 
     public class Proyecto {
@@ -49,3 +48,19 @@ La declaración de las variables cuenta de dos partes fundamentales:
 
 1. Tipo de Dato → Ej: int
 1. Nombre de la variable → Ej: numero
+1. Poner al final el ";".
+
+## **Declarando y asignando valor a variables**
+```
+    public static void main(String[], args){
+
+        int edad = 2;
+        String nombre = "Kai";
+        char inicial = 'K';
+        double temperatura = 35.1;
+        boolean siONo = true;
+        long pelos = 157489126;
+
+    }
+```
+Para el tipo **String** se utilizan siempre comillas dobles (" ") mientras que para el tipo **char** se utilizan siempre comillas simples(' ').
