@@ -23,6 +23,18 @@ Es la clase donde se va a ejecutar el código que cree. Ejemplo de una clase mai
 
     }
 ```
+## **Comentarios**
+Para escribir comentarios de una sola línea hay que poner antes de este dos '//'.
+```
+    // Esto es un comentario.
+```
+Para escribir comentarios de varias líneas hay que poner '/*' y '*/' antes y después del comentario respectivamente.
+```
+    /*
+    Esto es un comentario multilínea.
+    */
+```
+
 
 ## **Cómo imprimir mensajes en la consola**
 
@@ -92,6 +104,13 @@ Se utilizan de la misma manera que en JavaScript:
 
         resultado = num1 + num2;
 
+    }
+```
+## **Funciones**
+Igual que en JavaScript:
+```
+    imprimirSaludo(String name){
+        System.ou.prinln("Buenas tardes " + name);
     }
 ```
 
