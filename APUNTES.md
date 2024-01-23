@@ -107,12 +107,29 @@ Se utilizan de la misma manera que en JavaScript:
     }
 ```
 ## **Funciones**
-Igual que en JavaScript:
+Igual que en JavaScript, añadiendo antes _static void_ o el tipo de dato como _static int_:
 ```
-    imprimirSaludo(String name){
+    static void imprimirSaludo(String name){
         System.ou.prinln("Buenas tardes " + name);
     }
 ```
+## **Funciones anónimas**
+Se escribiría una función flecha, simplemente. Ejemplo:
+```
+    () => System.out.println("Hola");
+```
+## **Sobrecarga de funciones**
+Permite duplicar un método siempre y cuando tengan diferente tipo o número de parámetros. Ejemplo:
+```
+    static int suma(int num1, int num2){
+        return num1 + num2;
+    }
+
+    static int suma(int num1, int num2, int num3){
+        return num1 + num2 + num3;
+    }
+```
+En este ejemplo vemos que, a pesar de llamarse igual las funciones, no da error porque cambia el número de parámetros que tienen.
 
 ## **Condicional Simple If | Else**
 
