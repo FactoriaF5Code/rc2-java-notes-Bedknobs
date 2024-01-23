@@ -97,7 +97,7 @@ Se utilizan de la misma manera que en JavaScript:
 
 ## **Condicional Simple If | Else**
 
-Igual que es JavaScript:
+Igual que en JavaScript:
 
 ```
     public static void main(String[],args){
@@ -114,7 +114,6 @@ Igual que es JavaScript:
 
     }
 ```
-
 ## **Condicional Anidado If | Else If | Else**
 
 En vez de poner _else if_ como JavaScript, en Java se escribe el _if_ dentro del _else_, como si fuera otra condicional dentro de esta. Ejemplo:
@@ -134,3 +133,36 @@ En vez de poner _else if_ como JavaScript, en Java se escribe el _if_ dentro del
 ```
 
 No se puede poner un igual (=) solo en las condicionales, porque se reserva para asignación. En las condicionales es obligatorio poner mínimo dos iguales (==).
+
+## **Condicional Switch**
+
+Igual que en JavaScript:
+
+```
+    int dia = 5;
+    String nombreDia;
+
+    switch (dia) {
+        case 1: nombreDia = "Lunes";
+        break;
+        case 2: nombreDia = "Martes";
+        break;
+        case 3: nombreDia = "Miércoles";
+        break;
+        case 4: nombreDia = "Jueves";
+        break;
+        case 5: nombreDia = "Viernes";
+        break;
+        case 6: nombreDia = "Sábado";
+        break;
+        case 7: nombreDia = "Domingo";
+        break;
+        default nombreDia = "Número de día inválido";
+        break;
+    }
+```
+## **Operador Ternario**
+El operador ternario es una herramienta para tomar decisiones simples en una sola línea de código. Estructura:
+```
+    variable = condición ? valor_si_verdadero : valor_si_falso;
+```
