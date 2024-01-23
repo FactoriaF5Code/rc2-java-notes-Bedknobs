@@ -1,14 +1,16 @@
 ## **Cómo crear un proyecto de Java**
+
 Con Visual Studio Code:
 
 1. Abrir Visual Studio Code.
-1. Pulsar *F1* y escribir *java:*
-1. Hacer click en la opción de *Java: Create Java Project...*
+1. Pulsar _F1_ y escribir _java:_
+1. Hacer click en la opción de _Java: Create Java Project..._
 1. Elegir una herramienta si quisiera usarse.
 1. Elegir donde se quiere guardar el proyecto.
 
 ## **Clase Main**
-Es la clase donde se va a ejecutar el código que cree. Ejemplo de una clase main: 
+
+Es la clase donde se va a ejecutar el código que cree. Ejemplo de una clase main:
 
 ```
     package proyecto;
@@ -23,8 +25,8 @@ Es la clase donde se va a ejecutar el código que cree. Ejemplo de una clase mai
 ```
 
 ## **Cómo imprimir mensajes en la consola**
-Para imprimir mensajes en la consola se usa *System.out.println()*, poniendo dentro de los paréntesis el mensaje. 
 
+Para imprimir mensajes en la consola se usa _System.out.println()_, poniendo dentro de los paréntesis el mensaje.
 
 ```
     public static void main(String[], args){
@@ -35,15 +37,18 @@ Para imprimir mensajes en la consola se usa *System.out.println()*, poniendo den
 ```
 
 ## **Tipos de Datos**
-Los tipos de datos definen qué puede ser almacenado dentro de una variable y los límites de lo que allí se almacena. Algunos de los más usados son: 
 
-- **Entero**, *int* → Ej: 0, 1, 35, 120, 44, etc
-- **Entero largo**, *long* → Ej: 624197054097101680185
-- **Decimales**, *double* → Ej: 1.2, 5.8, 35.64, etc
-- **Booleanos**, *Boolean* → true o false
-- **Caracteres**, *char* → 'a', 'b', 'c', 'i', etc
-- **Cadena de Caracteres/Texto**, *String* → Ej: "Hola Mundo" 
+Los tipos de datos definen qué puede ser almacenado dentro de una variable y los límites de lo que allí se almacena. Algunos de los más usados son:
+
+- **Entero**, _int_ → Ej: 0, 1, 35, 120, 44, etc
+- **Entero largo**, _long_ → Ej: 624197054097101680185
+- **Decimales**, _double_ → Ej: 1.2, 5.8, 35.64, etc
+- **Booleanos**, _Boolean_ → true o false
+- **Caracteres**, _char_ → 'a', 'b', 'c', 'i', etc
+- **Cadena de Caracteres/Texto**, _String_ → Ej: "Hola Mundo"
+
 ## **Cómo declarar una variable**
+
 La declaración de las variables cuenta de dos partes fundamentales:
 
 1. Tipo de Dato → Ej: int
@@ -51,6 +56,7 @@ La declaración de las variables cuenta de dos partes fundamentales:
 1. Poner al final el ";".
 
 ## **Declarando y asignando valor a variables**
+
 ```
     public static void main(String[], args){
 
@@ -63,4 +69,68 @@ La declaración de las variables cuenta de dos partes fundamentales:
 
     }
 ```
+
 Para el tipo **String** se utilizan siempre comillas dobles (" ") mientras que para el tipo **char** se utilizan siempre comillas simples(' ').
+
+## **Operadores en Java**
+
+Existen tres tipos de operadores en Java:
+
+1. Aritméticos (+, -, \*, /).
+1. Relacionales (==, <, >, <=, >=, !=).
+1. Condicionales (&&, ||, !).
+
+Se utilizan de la misma manera que en JavaScript:
+
+```
+    public static void main(String[],args){
+
+        int num1, num2, resultado;
+
+        num1 = 5;
+        num2 = 3;
+
+        resultado = num1 + num2;
+
+    }
+```
+
+## **Condicional Simple If | Else**
+
+Igual que es JavaScript:
+
+```
+    public static void main(String[],args){
+
+        int num1 = 5;
+        int num2 = 3;
+
+        if (num1 > num2) {
+            System.out.prinln("El número 1 es mayor");
+        }
+        else {
+            System.out.println("El número 2 es mayor");
+        }
+
+    }
+```
+
+## **Condicional Anidado If | Else If | Else**
+
+En vez de poner _else if_ como JavaScript, en Java se escribe el _if_ dentro del _else_, como si fuera otra condicional dentro de esta. Ejemplo:
+
+```
+    if (num1 > num2) {
+        System.out.prinln("El número 1 es mayor");
+    }
+    else {
+        if (num1 == num2) {
+            System.out.println("Los dos números son iguales");
+        }
+        else {
+            System-out.println("El número 2 es mayor");
+        }
+    }
+```
+
+No se puede poner un igual (=) solo en las condicionales, porque se reserva para asignación. En las condicionales es obligatorio poner mínimo dos iguales (==).
